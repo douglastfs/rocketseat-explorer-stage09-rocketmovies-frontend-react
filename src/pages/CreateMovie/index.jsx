@@ -6,6 +6,7 @@ import { Textarea } from '../../components/Textarea';
 import { NoteItem } from '../../components/NoteItem';
 import { Section } from '../../components/Section';
 import { Button } from '../../components/Button';
+import { Link } from 'react-router-dom';
 
 export function CreateMovie(){
   return (
@@ -13,10 +14,10 @@ export function CreateMovie(){
       <Header />
 
       <main>
-        <a href="/">
+        <Link to="/">
           <FiArrowLeft />
           Voltar
-        </a>
+        </Link>
 
         <h2>Novo filme</h2>
 
@@ -40,17 +41,14 @@ export function CreateMovie(){
         <Section title="Marcadores">
           <div className="tags">
             <NoteItem value="React" />
-            <NoteItem value="React" />
-            <NoteItem value="React" />
-            <NoteItem value="React" />
             <NoteItem $isnew placeholder="Novo Marcador"  />
           </div>
         </Section>
 
         <div className="buttons">
-          <button className="excluir">
+          <Link className="excluir" to="/">
             Excluir filme
-          </button>
+          </Link>
 
           <Button title="Salvar alterações"/>
         </div>

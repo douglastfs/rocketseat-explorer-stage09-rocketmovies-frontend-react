@@ -14,7 +14,7 @@ export function Header() {
           icon={FiSearch}
         />
 
-        <Profile>
+        <Profile to="/profile">
           <div>
             <strong>Douglas Tenório</strong>
             <a href="#"><span>sair</span></a>

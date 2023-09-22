@@ -33,6 +33,7 @@ export const Container = styled.div`
     border-radius: 1rem;
     margin-top: 1.6rem;
     font-weight: 500;
+    justify-content: center;
   }
   
   > main {

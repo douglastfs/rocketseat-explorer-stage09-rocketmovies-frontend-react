@@ -4,7 +4,9 @@ import { Tag } from '../../components/Tag';
 
 import { FiArrowLeft } from 'react-icons/fi';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import { CiClock2 } from 'react-icons/ci'
+import { CiClock2 } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
+
 
 export function MoviePreview() {
   return(
@@ -12,10 +14,10 @@ export function MoviePreview() {
       <Header /> 
 
       <main>
-        <a href="/">
+        <Link to="/">
           <FiArrowLeft />
           Voltar
-        </a>
+        </Link>
 
         <div className='movie-title-rate'>
           <h1>Interestellar</h1>
